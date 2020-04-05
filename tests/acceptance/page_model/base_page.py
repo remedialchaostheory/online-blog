@@ -9,5 +9,6 @@ class BasePage:
     def url(self):
         return 'http://127.0.0.1:5000'  # do not include ending '/'
 
+    @property
     def title(self):
         return self.driver.find_element(*BasePageLocators.TITLE)
